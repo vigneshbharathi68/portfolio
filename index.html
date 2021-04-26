@@ -15,22 +15,45 @@
 </head>
 <style>
     .container-fluid {
-        background-color: rgb(224, 221, 221);
+        background-color: rgb(0, 0, 0);
         position: fixed;
     }
+    .active-nav{
+        border-bottom: 5px solid bisque;
+    }
+
+    
 </style>
-<body>
+<body class="bg-dark">
     <!-- Header -->
-    <div class="container-fluid">
-        <header class="d-flex justify-content-center py-3">
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
-                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #6610f2;">
+    
+    
+        <div class="ps-3 navbar-brand" href="#">
+            <img src="VB_background.jpg" alt="" width="30" height="30"
+                class="d-inline-block align-text-top">
+            <a>Vignesh Bharathi</a>
+        </div>
+    
+    
+        <div class=" m-auto">
+            <ul class="nav justify-content-center nav-pills">
+                <li class="nav-item active-nav"><a href="index.html" class="nav-link text-white">Home</a></li>
+                <li class="nav-item"><a href="resume.html" class="nav-link text-white">Resume</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link text-white">Projects</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link text-white">About</a></li>
             </ul>
-        </header>
-    </div>
+        </div>
+    
+    </nav>
+    
+    <main class="container text-white">
+        <div>
+    
+            <h1>This is Index page</h1>
+    
+        </div>
+    </main>
 
     
 </body>
